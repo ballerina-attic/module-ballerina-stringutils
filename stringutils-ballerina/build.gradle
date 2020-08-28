@@ -25,6 +25,12 @@ configurations {
     stringutilsBallerinaJar
 }
 
+dependencies {
+    jbalTools ("org.ballerinalang:jballerina-tools:${ballerinaLangVersion}") {
+        transitive = false
+    }
+}
+
 clean {
     delete "$project.projectDir/target"
     delete "$project.projectDir/Ballerina.lock"
