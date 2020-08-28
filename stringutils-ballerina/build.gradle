@@ -21,8 +21,6 @@ description = 'Ballerina - Stringutils Ballerina Generator'
 
 configurations {
     jbalTools
-    stringutilsBallerinaBirDir
-    stringutilsBallerinaJar
 }
 
 dependencies {
@@ -62,6 +60,7 @@ def targetBallerinaJar = file("$project.projectDir/target/caches/jar_cache/${mod
 
 task ballerinaBuild {
     inputs.dir file(project.projectDir)
+
     doLast {
         def originalConfig = ballerinaConfigFile.text
         def newConfig = ballerinaConfigFile.text.replace("@project.version@", project.version)
@@ -69,6 +68,10 @@ task ballerinaBuild {
         ballerinaConfigFile.text = newConfig
 
         def distributionBinPath =  project.projectDir.absolutePath + "/build/target/extracted-distributions/jballerina-tools-zip/jballerina-tools-${ballerinaLangVersion}/bin"
+
+        if (project.hasProperty("skipBallerinaTests")) {
+            additionalBuildParams = "--skip-tests"
+        }
 
         // Build and populate caches
         exec {
