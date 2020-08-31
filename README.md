@@ -1,9 +1,9 @@
 Ballerina String Utils Library
 ==============================
 
-  [![Build](https://github.com/ballerina-platform/module-ballerina-stringutils/workflows/Build/badge.svg)](https://github.com/ballerina-platform/module-ballerina-sql/actions?query=workflow%3ABuild)
-  [![Daily build](https://github.com/ballerina-platform/module-ballerina-stringutils/workflows/Daily%20build/badge.svg)](https://github.com/ballerina-platform/module-ballerina-java.jdbc/actions?query=workflow%3ABuild)
-  [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerina-stringutils.svg)](https://github.com/ballerina-platform/module-ballerina-sql/commits/master)
+  [![Build](https://github.com/ballerina-platform/module-ballerina-stringutils/workflows/Build/badge.svg)](https://github.com/ballerina-platform/module-ballerina-stringutils/actions?query=workflow%3ABuild)
+  [![Daily build](https://github.com/ballerina-platform/module-ballerina-stringutils/workflows/Daily%20build/badge.svg)](https://github.com/ballerina-platform/module-ballerina-stringutils/actions?query=workflow%3ABuild)
+  [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerina-stringutils.svg)](https://github.com/ballerina-platform/module-ballerina-stringutils/commits/master)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This String utils library is one of the standard libraries of <a target="_blank" href="https://ballerina.io/">Ballerina</a> language.
