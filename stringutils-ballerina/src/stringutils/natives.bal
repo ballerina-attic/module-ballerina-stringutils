@@ -15,7 +15,6 @@
 // under the License.
 
 import ballerina/java;
-import ballerina/io;
 
 # Checks whether the given string contains a particular substring.
 # ```ballerina
@@ -97,7 +96,7 @@ public function replace(string originalString, string stringToReplace, string re
         return updatedString;
     } else {
         // should never reach here
-        error e = error(io:sprintf("error occurred while replacing '%s' in '%s' ", stringToReplace, originalString));
+        error e = error(string `error occurred while replacing ${stringToReplace} in ${originalString}`);
         panic e;
     }
 }
@@ -123,7 +122,7 @@ public function replaceAll(string originalString, string regex, string replaceme
         return updatedString;
     } else {
         // should never reach here
-        error e = error(io:sprintf("error occurred while replacing '%s' in '%s' ", regex, originalString));
+        error e = error(string `error occurred while replacing ${regex} in ${originalString}`);
         panic e;
     }
 }
@@ -149,7 +148,7 @@ public function replaceFirst(string originalString, string regex, string replace
         return updatedString;
     } else {
         // should never reach here
-        error e = error(io:sprintf("error occurred while replacing '%s' in '%s' ", regex, originalString));
+        error e = error(string `error occurred while replacing ${regex} in ${originalString}`);
         panic e;
     }
 }
