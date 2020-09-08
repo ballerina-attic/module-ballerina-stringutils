@@ -27,17 +27,17 @@ For a quick sample on demonstrating the usage see [Ballerina By Example](https:/
 
 ## Building from the Source
 
-1. To build the library,
+1. To build the library:
         
         ./gradlew clean build
 
-2. To run the integration tests
+2. To debug:
 
-        ./gradlew clean test
+        ./gradlew clean build -PdebugBallerina=<port>
 
-3. To debug the tests,
+3. To build the module without the tests:
 
-        ./gradlew clean build -Pdebug=<port>
+        ./gradlew clean build -PskipBallerinaTests
 
 ## Contributing to Ballerina
 
