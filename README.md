@@ -36,7 +36,7 @@ For a quick sample on demonstrating the usage see [Ballerina By Example](https:/
    * [OpenJDK](https://adoptopenjdk.net/)
    
         > **Note:** Set the JAVA_HOME environment variable to the path name of the directory into which you installed JDK.
-                                                 >
+
 ### Building the Source
 
 1. To build the library:
