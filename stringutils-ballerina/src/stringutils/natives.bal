@@ -241,6 +241,6 @@ isolated function toBooleanExternal(handle stringValue) returns boolean = @java:
 } external;
 
 isolated function getBallerinaStringArray(handle h) returns string[] = @java:Constructor {
-    'class:"org/ballerinalang/jvm/values/ArrayValueImpl",
+    'class:"io/ballerina/runtime/values/ArrayValueImpl",
     paramTypes:["[Ljava.lang.String;"]
 } external;
