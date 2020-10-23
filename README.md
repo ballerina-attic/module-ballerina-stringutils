@@ -3,6 +3,7 @@ Ballerina String Utils Library
 
   [![Build](https://github.com/ballerina-platform/module-ballerina-stringutils/workflows/Build/badge.svg)](https://github.com/ballerina-platform/module-ballerina-stringutils/actions?query=workflow%3ABuild)
   [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerina-stringutils.svg)](https://github.com/ballerina-platform/module-ballerina-stringutils/commits/master)
+  [![Github issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-standard-library/module/stringutils.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-standard-library/labels/module%2Fstringutils)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This String utils library is one of the standard libraries of <a target="_blank" href="https://ballerina.io/">Ballerina</a> language.
