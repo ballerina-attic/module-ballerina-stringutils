@@ -33,7 +33,7 @@ function testContainsNegative() {
 }
 
 @test:Config{}
-function testEqualsIgnoreCase() {
+isolated function testEqualsIgnoreCase() {
     string firstString = "TeSTiNg StrInG 1";
     string secondString = "teStiNg strInG 1";
     boolean actualvalue = equalsIgnoreCase(firstString, secondString);
@@ -41,7 +41,7 @@ function testEqualsIgnoreCase() {
 }
 
 @test:Config{}
-function testEqualsIgnoreCaseNegative() {
+isolated function testEqualsIgnoreCaseNegative() {
     string firstString = "TeSTiNg StrInG 1";
     string secondString = "teStiNg strInG 2";
     boolean actualvalue = equalsIgnoreCase(firstString, secondString);
@@ -49,14 +49,14 @@ function testEqualsIgnoreCaseNegative() {
 }
 
 @test:Config{}
-function testHashCode() {
+isolated function testHashCode() {
     string stringValue = "Testing String";
     int actualvalue = hashCode(stringValue);
     test:assertEquals(actualvalue, 117955681, msg = "Hashcode values are not equal");
 }
 
 @test:Config{}
-function testLastIndexOf() {
+isolated function testLastIndexOf() {
     string originalString = "This is as large as Elephas maximus";
     string substring = "as";
     int actualvalue = lastIndexOf(originalString, substring);
@@ -64,7 +64,7 @@ function testLastIndexOf() {
 }
 
 @test:Config{}
-function testMatches() {
+isolated function testMatches() {
     string stringToMatch = "This Should Match";
     string regex = "Th.*ch";
     boolean actualvalue = matches(stringToMatch, regex);
@@ -72,14 +72,14 @@ function testMatches() {
 }
 
 @test:Config{}
-function testReplace() {
+isolated function testReplace() {
     string testStr = "Hello Amal!!! Nimal!!!";
     string actualvalue = replace(testStr, "!!!", "!");
     test:assertEquals(actualvalue, "Hello Amal! Nimal!", msg = "String values are not equal");
 }
 
 @test:Config{}
-function testReplaceAll() {
+isolated function testReplaceAll() {
     string original = "ReplaceTTTGGGThis";
     string regex = "T.*G";
     string replacement = " ";
@@ -88,7 +88,7 @@ function testReplaceAll() {
 }
 
 @test:Config{}
-function testReplaceFirst() {
+isolated function testReplaceFirst() {
     string original = "ReplaceThisThisTextThis";
     string regex = "This";
     string replacement = " ";
@@ -97,35 +97,35 @@ function testReplaceFirst() {
 }
 
 @test:Config{}
-function testSplit() {
+isolated function testSplit() {
     string testStr = "amal,,kamal,,nimal,,sunimal,";
     string[] actualvalue = split(testStr, ",,");
     test:assertEquals(actualvalue, ["amal", "kamal", "nimal", "sunimal,"], msg = "Array values are not equal");
 }
 
 @test:Config{}
-function testToBooleanTrue() {
+isolated function testToBooleanTrue() {
     string stringValue = "true";
     boolean actualvalue = toBoolean(stringValue);
     test:assertTrue(actualvalue, msg = "AssertTrue failed");
 }
 
 @test:Config{}
-function testToBooleanTrueCaps() {
+isolated function testToBooleanTrueCaps() {
     string stringValue = "TrUe";
     boolean actualvalue = toBoolean(stringValue);
     test:assertTrue(actualvalue, msg = "AssertTrue failed");
 }
 
 @test:Config{}
-function testToBooleanFalse() {
+isolated function testToBooleanFalse() {
     string stringValue = "false";
     boolean actualvalue = toBoolean(stringValue);
     test:assertFalse(actualvalue, msg = "AssertFalse failed");
 }
 
 @test:Config{}
-function testToBooleanInvalid() {
+isolated function testToBooleanInvalid() {
     string stringValue = "invalid_string";
     boolean actualvalue = toBoolean(stringValue);
     test:assertFalse(actualvalue, msg = "AssertFalse failed");
