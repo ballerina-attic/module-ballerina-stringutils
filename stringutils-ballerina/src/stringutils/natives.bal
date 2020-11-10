@@ -240,7 +240,8 @@ isolated function toBooleanExternal(handle stringValue) returns boolean = @java:
     paramTypes: ["java.lang.String"]
 } external;
 
-isolated function getBallerinaStringArray(handle h) returns string[] = @java:Constructor {
-    'class:"io/ballerina/runtime/values/ArrayValueImpl",
+isolated function getBallerinaStringArray(handle h) returns string[] = @java:Method {
+    'class:"io.ballerina.runtime.api.utils.StringUtils",
+    name:"fromStringArray",
     paramTypes:["[Ljava.lang.String;"]
 } external;
